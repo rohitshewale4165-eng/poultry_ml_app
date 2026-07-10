@@ -1,0 +1,287 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "DLBC-.YYYY.-.#####",
+ "creation": "2026-07-09 12:03:25.759129",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_a_input_fields_section",
+  "shed_length",
+  "shed_width",
+  "side_height",
+  "centre_height",
+  "number_of_sheds",
+  "electric_phase",
+  "material_quality",
+  "bird_density",
+  "equipment_cost",
+  "other_charges",
+  "extra_charges",
+  "calculate",
+  "section_break_ncni",
+  "average_height",
+  "total_area_sq_ft",
+  "total_birds_per_shed",
+  "total_birds_all_sheds",
+  "ai_predicted_cost",
+  "total_installation_cost",
+  "category_fallback_used",
+  "floor_applied",
+  "unusual_input_warning",
+  "raw_ai_prediction",
+  "ai_confidence_",
+  "prediction_range_95",
+  "ai_recommendation",
+  "top_cost_driver",
+  "status",
+  "equipment_total",
+  "installation_total",
+  "grand_total",
+  "cost_per_bird",
+  "cost_per_sq_ft"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_a_input_fields_section",
+   "fieldtype": "Section Break",
+   "label": "Section A Input Fields"
+  },
+  {
+   "fieldname": "shed_length",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Shed Length",
+   "reqd": 1
+  },
+  {
+   "fieldname": "shed_width",
+   "fieldtype": "Float",
+   "label": "Shed Width",
+   "reqd": 1
+  },
+  {
+   "fieldname": "side_height",
+   "fieldtype": "Float",
+   "label": "Side Height",
+   "reqd": 1
+  },
+  {
+   "fieldname": "centre_height",
+   "fieldtype": "Float",
+   "label": "Centre Height"
+  },
+  {
+   "fieldname": "number_of_sheds",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Number of Sheds",
+   "reqd": 1
+  },
+  {
+   "fieldname": "electric_phase",
+   "fieldtype": "Select",
+   "label": "Electric Phase",
+   "options": "1 Phase\n3 Phase",
+   "reqd": 1
+  },
+  {
+   "fieldname": "material_quality",
+   "fieldtype": "Select",
+   "label": "Material Quality",
+   "options": "Standard\nPremium",
+   "reqd": 1
+  },
+  {
+   "description": "sqft per bird",
+   "fieldname": "bird_density",
+   "fieldtype": "Float",
+   "label": "Bird Density",
+   "reqd": 1
+  },
+  {
+   "fieldname": "equipment_cost",
+   "fieldtype": "Currency",
+   "label": "Equipment Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "other_charges",
+   "fieldtype": "Currency",
+   "label": "Other Charges"
+  },
+  {
+   "fieldname": "extra_charges",
+   "fieldtype": "Currency",
+   "label": "Extra Charges"
+  },
+  {
+   "bold": 1,
+   "button_color": "Success",
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate Cost"
+  },
+  {
+   "fieldname": "section_break_ncni",
+   "fieldtype": "Section Break",
+   "label": "Section B Output Fields"
+  },
+  {
+   "fieldname": "average_height",
+   "fieldtype": "Float",
+   "label": "Average Height",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_area_sq_ft",
+   "fieldtype": "Float",
+   "label": "Total Area (Sq Ft)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_birds_per_shed",
+   "fieldtype": "Int",
+   "label": "Total Birds Per Shed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_birds_all_sheds",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Total Birds All Sheds",
+   "read_only": 1
+  },
+  {
+   "description": "Main result",
+   "fieldname": "ai_predicted_cost",
+   "fieldtype": "Currency",
+   "label": "AI Predicted Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_installation_cost",
+   "fieldtype": "Currency",
+   "label": "Total Installation Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "category_fallback_used",
+   "fieldtype": "Small Text",
+   "label": "Category Fallback Used",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "floor_applied",
+   "fieldtype": "Check",
+   "label": "Floor Applied",
+   "read_only": 1
+  },
+  {
+   "fieldname": "unusual_input_warning",
+   "fieldtype": "Small Text",
+   "label": "Unusual Input Warning",
+   "read_only": 1
+  },
+  {
+   "fieldname": "raw_ai_prediction",
+   "fieldtype": "Currency",
+   "label": "Raw AI Prediction",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ai_confidence_",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "AI Confidence %",
+   "read_only": 1
+  },
+  {
+   "fieldname": "prediction_range_95",
+   "fieldtype": "Data",
+   "label": "Prediction Range (95%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ai_recommendation",
+   "fieldtype": "Data",
+   "label": "AI Recommendation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "top_cost_driver",
+   "fieldtype": "Data",
+   "label": "Top Cost Driver",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "equipment_total",
+   "fieldtype": "Currency",
+   "label": "Equipment Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "installation_total",
+   "fieldtype": "Currency",
+   "label": "Installation Total",
+   "read_only": 1
+  },
+  {
+   "description": "Final figure",
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_per_bird",
+   "fieldtype": "Currency",
+   "label": "Cost Per Bird",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cost_per_sq_ft",
+   "fieldtype": "Currency",
+   "label": "Cost Per Sq Ft",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-07-10 11:09:39.842866",
+ "modified_by": "Administrator",
+ "module": "poultry ML App",
+ "name": "Deep Litter Broiler Calculator",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

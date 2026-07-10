@@ -1,0 +1,1 @@
+{"Electric_Phase": {"3 Phase": 0, "Single Phase": 1}, "Equipment_Brand": {"Branded": 0, "Local": 1, "Premium Imported": 2}, "Material_Quality": {"Low": 0, "Premium": 1, "Standard": 2}, "_most_frequent": {"Electric_Phase": "3 Phase", "Equipment_Brand": "Branded", "Material_Quality": "Standard"}}
