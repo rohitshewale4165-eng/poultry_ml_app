@@ -1,4 +1,4 @@
-# Poultry ML App
+# Poultry Cost Prediction ML App
 
 An ERPNext/Frappe custom app that uses machine learning to predict **poultry shed construction costs**, with confidence scoring and cost-driver analysis, directly inside the ERP.
 
